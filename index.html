@@ -1,14 +1,43 @@
 <!doctype html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="accordion">
 	<head>
 		<title>AngularJS barebones App</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 
 	<body>
 		<p>AngularJS barebones app for dev & testing</p>
+
+		<accordion>
+			<accordion-section>
+				<accordion-section-header>
+					<h4>Section 1 header</h4>
+				</accordion-section-header>
+				<accordion-section-body>
+					<p>Section 1 body</p>
+				</accordion-section-body>
+			</accordion-section>
+
+			<accordion-section>
+				<accordion-section-header>
+					<h4>Section 2 header</h4>
+				</accordion-section-header>
+				<accordion-section-body>
+					<p3>Section 2 body</p>
+				</accordion-section-body>
+			</accordion-section>
+			
+			<accordion-section>
+				<accordion-section-header>
+					<h4>Section 3 header</h4>
+				</accordion-section-header>
+				<accordion-section-body>
+					<p>Section 3 body</p>
+				</accordion-section-body>
+			</accordion-section>
+		</accordion>
+
 		<div ng-view></div>
 		
 		<script src="bower_components/angular/angular.min.js"></script>
