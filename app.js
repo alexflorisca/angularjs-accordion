@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Simple accordion with HTML headers
  *
@@ -23,7 +25,7 @@ angular.module('accordion')
 		transclude: true,
 		replace: true,
 		template: '<dl ng-transclude class="accordion"></dl>',
-		controller: function($scope) {
+		controller: function() {
 			// We need to keepa track of all the sections in the accordion
 			var sections = [];
 
@@ -85,7 +87,7 @@ angular.module('accordion')
 			// Add the section to the accordion
 			ctrl.addSection(scope);
 
-			scope.toggle = function(section) {
+			scope.toggle = function() {
 				ctrl.expandSection(scope);
 			};
 		}
