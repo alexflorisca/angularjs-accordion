@@ -6,6 +6,17 @@
  * TODO: Show/Hide panel transitions - look at how bootstrap does it
  * TODO: Refactor so main functions are set on the accordion-section
  * 			 rather than the accordionSectionHeader
+ *
+ *
+ * USE:
+ * <accordion>
+ * 	 <accordion-section>
+ * 	 	 <accordion-section-header>Header</accordion-section-header>
+ * 	 	 <accordion-section-body>
+ * 	 	 	 Accordion body here.
+ * 	 	 </accordion-section-body>
+ * 	 </accordion-section>
+ * </accordion>
  */
 
 angular.module('accordion', []);
